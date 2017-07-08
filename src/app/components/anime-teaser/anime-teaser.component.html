@@ -1,0 +1,15 @@
+<div class="anime anime--teaser anime-{{anime.getIdentifier()}}" >
+    <div class="teaser-detail">
+        <a class="image" href="#/anime/{{anime.getIdentifier()}}">
+            <div>
+                <div class="img teaser" [ngStyle]="{'background-image': 'url(' + anime.getPoster('small') + '), url(' + anime.getPosterDefault() +')'}"></div>
+            </div>
+            <!--<img class="hide"  src="{{anime.getImageTiny()}}">-->
+        </a>
+        <div class="info">
+            <div class="title">{{anime.getTitle()}}</div>
+            <p class="description">{{anime.getDescription(70)}}</p>
+        </div>
+    </div>
+</div>
+<div class="outside title">{{anime.getTitle()}}</div>

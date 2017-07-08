@@ -1,0 +1,4 @@
+/node_modules/
+/npm-debug.log
+/nbproject/
+src/app/config.ts

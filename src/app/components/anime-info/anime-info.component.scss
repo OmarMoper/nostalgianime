@@ -1,0 +1,48 @@
+@import '../../shared/scss/components';
+
+.anime-info-tooltip {
+    padding: .8em .8em .8em .8em;
+    border-radius: 2em;
+    background-color: #292424;
+    .highlight {
+        font-size: $text-big;
+        color: #337ab7;
+    }
+    .description {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-size: $text-small;
+        color: white;
+    }
+}
+
+/** @DEPRECATED!*/
+/*.anime-info-image, .anime-info-details {
+    display: inline-block;
+}
+
+.anime-info-image {
+    width: 70%;
+    border: 1px solid black;
+    img {
+        width: 100%
+    }
+}
+
+.anime-info-details {
+    padding-left: 1em;
+    vertical-align: top;
+    width: 26.6%;
+    height: 11.05em;
+    background-color: #c5d6e2;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $text-big; 
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $text-small;
+}*/

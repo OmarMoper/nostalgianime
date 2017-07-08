@@ -1,0 +1,9 @@
+<form class="form search-by-year" id="search-form" >
+    <div class="error-select-year" *ngIf="yearEmpty">
+        Select a year.
+    </div>
+    <div class="form-control year">
+        <!--<input auto-complete formControlName="year" name="year" [source]="yearsList()" placeholder="Select a year">-->
+        <select-year (yearSelect)="onYearSelect($event)" [value]="year"></select-year>
+    </div>
+</form>

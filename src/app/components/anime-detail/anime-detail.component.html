@@ -1,0 +1,62 @@
+<ng-container *ngIf="anime != null">
+<div class="anime anime--detail anime-{{anime.getIdentifier()}}" >
+    <div class="img full" [ngStyle]="{'background-image': 'url(' + anime.getCover('original') + '), url(' + anime.getCoverDefault() +')'}">
+        <div class="overlay"></div>
+        <div class="title">{{anime.getTitle()}}</div>
+    </div>
+    <aside class="info-left">
+        <img class="cover" src="{{anime.getPoster('small')}}">
+        <span class="rating {{anime.getRatingClass()}}">{{anime.getRatingFormatted()}}</span>
+        <ul class="info">
+            <li> <span class="caption">Information</span>
+                <ul class="details">
+                    <li class="year"><span class="title">Year</span><span class="text"><a target="_blank" href="#/explore?year={{anime.getYear()}}" title="Explore more animes in {{anime.getYear()}}">{{anime.getYear()}} <fa name="search"></fa></a></span></li>
+                    <li class="year"><span class="title">Studio</span><span class="text"></span></li>
+                    <li class="year"><span class="title">Author</span><span class="text"></span></li>
+                </ul>
+            </li>
+            <li *ngIf="anime.getMappings().length"> <span class="caption">You can find more in:</span>
+                <ul class="mappings">
+                    <li class="mapping">
+                        <a target="_blank" class="mapping-link kitsu" href="//kitsu.io/anime/{{anime.getSlug()}}"></a>
+                    </li>
+                    <li class="mapping" *ngFor="let mapping of anime.getMappings()">
+                        <a target="blank" class="mapping-link {{mapping.getProvider()}}" href="{{mapping.getUrl()}}"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+        <!--<img class="hide"  src="{{anime.getImageTiny()}}">-->
+    <div class="info-center">
+        <div class="wrapper">
+        <ul class="categories">
+            <li class="category" *ngFor="let genre of anime.getGenres()">
+                <a href="#/explore?genre={{genre.getSlug()}}">{{genre.getName()}}</a>
+            </li>
+        </ul>
+        <p class="description">{{anime.getDescription()}}</p>
+        </div>
+    </div>
+    <div class="info-right">
+        <div class="share-links">
+            <share-buttons [url]="currentUrl" 
+                [stumbleUpOn]="false" [google]="false" [tumblr]="false" [linkedIn]="false" [pinterest]="false"
+                [showCount]="false" (count)="sumCounts($event)"></share-buttons>
+        </div>
+        <youtube-player *ngIf="anime.getYoutubeVideoId() != null" [videoId]="anime.getYoutubeVideoId()" [width]="310" [height]="300"></youtube-player>
+        
+        <ul *ngIf="anime.getStreamingLinks().length" class="info">
+            <li> <span class="caption">Watch this anime on:</span>
+                <ul class="mappings">
+                    <ng-container *ngFor="let streamingLink of anime.getStreamingLinks()">
+                        <li *ngIf="streamingLink.getProvider()" class="mapping">
+                            <a target="_blank" class="mapping-link {{streamingLink.getProvider()}}" href="{{streamingLink.getUrl()}}"></a>
+                        </li>
+                    </ng-container>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</ng-container>

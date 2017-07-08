@@ -1,0 +1,11 @@
+.column {
+    display: inline-block;
+    width: 20%;
+    &:not(:first-child) {
+        margin-top: -2em;
+    }
+}
+
+.anime-list {
+    margin-left: 1em;
+}

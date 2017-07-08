@@ -1,0 +1,11 @@
+<form class="form search-form" id="search-form"> 
+<!--<form class="form search-form" id="search-form">--> 
+    <div class="form-control genres">
+        <select-genre (genreSelect)="onGenreSelect($event)" [value]="genre"></select-genre>
+    </div>
+
+    <div class="form-control year">
+        <!--<input auto-complete formControlName="year" name="year" [source]="yearsList()" placeholder="Select a year">-->
+        <select-year (yearSelect)="onYearSelect($event)" [value]="year"></select-year>
+    </div>
+</form>

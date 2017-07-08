@@ -1,0 +1,12 @@
+<no-results *ngIf="!animeList.length && loaded"></no-results>
+<ngx-jquery-scrolltop></ngx-jquery-scrolltop>
+<ng-container *ngIf="animeList.length > 0">
+<div class="anime-list" 
+     infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="300"
+    (scrolled)="addMore()"
+    [infiniteScrollDisabled]="!useInfiniteScroll">
+    <anime-teaser class="column" *ngFor="let anime of animeList" [anime]="anime" ></anime-teaser>
+</div>
+</ng-container>

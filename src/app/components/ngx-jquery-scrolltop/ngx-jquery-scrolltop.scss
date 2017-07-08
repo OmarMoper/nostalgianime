@@ -1,0 +1,16 @@
+$width: 30px;
+.scroll-top {
+    position: fixed;
+    right: 16em;
+    bottom: 1em;
+    z-index: 2;
+    width: $width;
+    height: $width;
+    img {
+        width: $width;
+        height: $width;
+        cursor: pointer;
+    }
+    /*.markup {*/
+    /*}*/
+}
