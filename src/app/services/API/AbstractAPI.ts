@@ -1,6 +1,6 @@
 import { Http } from '@angular/http';
-import {config} from '../../config'
 
+const API_URL = 'http://nostalgiame.herokuapp.com/api';
 export abstract class AbstractAPI {
 
     constructor(protected http: Http) {}
@@ -8,7 +8,7 @@ export abstract class AbstractAPI {
     abstract getEndpoint(): string;
 
     public getEndpointUrl(): string {
-        let url = config('apiUrl') + this.getEndpoint()
+        let url = API_URL + this.getEndpoint()
         return url;
     }
 
