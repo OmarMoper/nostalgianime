@@ -2,3 +2,4 @@
 /npm-debug.log
 /nbproject/
 src/app/config.ts
+dist
