@@ -1,4 +1,0 @@
---- Autocompletado por url ---
-- Hacer que los parámetros de url autocompleten la búsqueda,y esta mande un
-evento de busqueda para poder buscar.
-
