@@ -7,7 +7,7 @@
         height: 500px;
         width: 100%;
         img {
-            filter: grayscale(60%);
+            filter: grayscale(70%);
             width: 100%;
             object-fit: cover;
         }
@@ -25,5 +25,23 @@
             background-color: white;
         }
     }
-
+    .anime-title {
+        position: relative;
+        color: black;
+        top: 14.4em;
+        font-size: 28px;
+        font-family: 'Open Sans', sans-serif;
+        max-height: 2.3em;
+        padding: 0.4em;
+        right: 50em;
+        display: block;
+        white-space: nowrap;
+        background-color: rgba(183, 174, 174, 0.73);
+        border-radius: 1em;
+        border: 3px solid black;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
 }

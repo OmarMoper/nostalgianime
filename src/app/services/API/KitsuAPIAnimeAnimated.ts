@@ -52,7 +52,7 @@ small: "https://media.kitsu.io/anime/cover_images/5853/small.jpg?1426299089",
 large: "https://media.kitsu.io/anime/cover_images/5853/large.jpg?1426299089",
 original: "https://media.kitsu.io/anime/cover_images/5853/original.jpg?1426299089"
 },
-canonicalTitle: "Mahou Shoujo Madokaâ˜…Magica"
+canonicalTitle: "Mahou Shoujo Madoka★Magica"
 }
 },
 {

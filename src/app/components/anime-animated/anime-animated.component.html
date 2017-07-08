@@ -1,10 +1,11 @@
 <div class="anime-animated-list">
     <ng-container *ngFor="let anime of animeList">
         <div class="anime-animated-image hide">
-            <img class="img overlay" src="{{anime.getCover('original')}}">
+        <img class="img overlay" src="{{anime.getCover('original')}}">
             <div class="year">
                 <span class="number" *ngFor="let number of getYearNumbers(anime)">{{number}}</span>
             </div>
+        <span class="anime-title"><a target="_blank" href="#/anime/{{anime.getIdentifier()}}">{{anime.getTitle()}}</a></span>
         </div>
     </ng-container>
 <div>
