@@ -41,7 +41,7 @@ export class Anime extends KitsuApiEntity {
     }
 
     public getCoverDefault() {
-        return '../../../assets/img/default/default_cover.png';
+        return '/assets/img/default/default_cover.png';
     }
 
     public getPosterList() {
@@ -124,6 +124,6 @@ export class Anime extends KitsuApiEntity {
     }
 
     public getPosterDefault() {
-        return '../../../assets/img/default/animeteasernotfound.jpg';
+        return '/assets/img/default/animeteasernotfound.jpg';
     }
 }

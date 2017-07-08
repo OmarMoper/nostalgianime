@@ -5,7 +5,7 @@ import * as $ from 'jquery';
   selector: 'ngx-jquery-scrolltop',
   styleUrls: ['./ngx-jquery-scrolltop.scss'],
   template: `
-  <div class="scroll-top"><img src="../../assets/img/caret-arrow-up.png" /></div>
+  <div class="scroll-top"><img src="/assets/img/caret-arrow-up.png" /></div>
   `
 })
 export class JqueryScrollTopComponent implements OnInit {
