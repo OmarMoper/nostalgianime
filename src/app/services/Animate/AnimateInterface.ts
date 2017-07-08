@@ -4,4 +4,5 @@ export interface AnimateInterface {
     setSelector(selector)
     setList(list)
     enable()
+    disable()
 }

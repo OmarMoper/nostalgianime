@@ -1,15 +1,14 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, OnDestroy } from '@angular/core';
 import {KitsuAPIAnimeAnimated} from '../../services/API/KitsuAPIAnimeAnimated';
 import {AnimateRandom} from '../../services/Animate/AnimateRandom';
 import {AnimateInterface} from '../../services/Animate/AnimateInterface';
 
-const ANIMATION_END_EVENTS = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 @Component({
   selector: 'anime-animated',
   templateUrl: './anime-animated.component.html',
   styleUrls: ['./anime-animated.component.scss']
 })
-export class AnimeAnimatedComponent implements OnInit {
+export class AnimeAnimatedComponent implements OnInit, OnDestroy {
 
     animeList;
     animator: AnimateInterface
@@ -32,5 +31,14 @@ export class AnimeAnimatedComponent implements OnInit {
 
     public getYearNumbers(anime) {
         return anime.getYear().split('');
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * Disable async animator.
+     */
+    ngOnDestroy() {
+        this.animator.disable();
     }
 }

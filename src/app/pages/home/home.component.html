@@ -1,6 +1,9 @@
 <anime-animated></anime-animated>
-<h2>Would you like discover animes from older times?</h2>
-<search-year></search-year>
-<h2>...or you are searching for something special?</h2>
-<search-text (search)="onSearchByText($event)"></search-text>
-<anime-results [limit]="5" [useInfiniteScroll]="false" ></anime-results>
+<section class="main-content">
+    <h1 class="page-title"> Nostalgia Anime</h1>
+    <h2 class="suggestion">Would you like discover animes from older times?</h2>
+    <search-year></search-year>
+    <h2>...or you are searching for something special?</h2>
+    <search-text (search)="onSearchByText($event)"></search-text>
+    <anime-results [limit]="4" [useInfiniteScroll]="false" ></anime-results>
+</section>

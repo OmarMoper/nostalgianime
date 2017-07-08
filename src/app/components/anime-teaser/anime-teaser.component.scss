@@ -51,6 +51,7 @@
     }
 
     .info {
+        z-index: 2;
         word-wrap:break-word;
         /*padding: 1em;*/
         display: inline-block;
@@ -65,7 +66,6 @@
         text-align: justify;
         .description {
             color: #b0bec5;
-            z-index: 2;
             font-size: $text-xsmall;
             font-family: 'Montserrat', sans-serif;
             width: 20em;

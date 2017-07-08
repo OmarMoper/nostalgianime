@@ -26,6 +26,10 @@ export abstract class AnimateBase implements AnimateInterface {
         this.animate = true;
     }
 
+    public disable() {
+        this.animate = false;
+    }
+
     public getCurrentElement() {
         return this.currentElement;
     }
@@ -67,7 +71,7 @@ export abstract class AnimateBase implements AnimateInterface {
             this.showCurrentElement();
             this.setAnimation();
             this.animateCurrentElement();
-            await this.sleep(1000);
+            await this.sleep(3000);
         }
     }
 

@@ -22,7 +22,7 @@ export class RandomList {
      *
      * @var int
      */
-    protected turns = 2;
+    protected turns = 1;
 
     /**
      * Constructor.
