@@ -3,18 +3,32 @@
 
 .anime-animated-list {
     .anime-animated-image {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         display: flex;
         height: 500px;
         width: 100%;
-        img {
-            filter: grayscale(70%);
-            width: 100%;
-            object-fit: cover;
+        overflow:hidden;
+        &:after {
+            position: absolute;
+            content:"";
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            opacity: .6;
+            background-color: black;
+        }
+        z-index: 0;
+        * {
+            z-index: 2;
         }
     }
     .year {
         position: relative;
-        right: 99%;
+        left: 4%;
         top: 6%;
         font-family: 'Open sans';
         font-weight: bold;
@@ -28,12 +42,12 @@
     .anime-title {
         position: relative;
         color: black;
-        top: 14.4em;
+        top: 14.9em;
+        right: 3em;
         font-size: 28px;
         font-family: 'Open Sans', sans-serif;
         max-height: 2.3em;
         padding: 0.4em;
-        right: 50em;
         display: block;
         white-space: nowrap;
         background-color: rgba(183, 174, 174, 0.73);

@@ -1,7 +1,7 @@
 <div class="anime-animated-list">
     <ng-container *ngFor="let anime of animeList">
-        <div class="anime-animated-image hide">
-        <img class="img overlay" src="{{anime.getCover('original')}}">
+        <div class="anime-animated-image hide" [ngStyle]="{'background-image': 'url(' + anime.getCover('original') + '), url(' + anime.getCover('original') +')'}">
+            <div class="overlay"></div>
             <div class="year">
                 <span class="number" *ngFor="let number of getYearNumbers(anime)">{{number}}</span>
             </div>
