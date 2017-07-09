@@ -16,7 +16,7 @@ export class ExploreComponent {
     }
 
     onSearchByYear(data) {
-        this.animeInfoComponent.year = data
+//        this.animeInfoComponent.year = data
     }
 
 }
