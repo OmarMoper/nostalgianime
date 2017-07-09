@@ -32,7 +32,7 @@
         <div class="wrapper">
         <ul class="categories">
             <li class="category" *ngFor="let genre of anime.getGenres()">
-                <a href="#/explore?genre={{genre.getSlug()}}">{{genre.getName()}}</a>
+                <a href="#/explore?genre={{genre.getSlug()}}&year={{anime.getYear()}}">{{genre.getName()}}</a>
             </li>
         </ul>
         <p class="description">{{anime.getDescription()}}</p>
