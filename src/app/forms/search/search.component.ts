@@ -34,6 +34,7 @@ export class SearchComponent implements OnInit {
     // Kitsu api provider.
     year: Number
     genre = ''
+    genreLabel = '';
 
     @Input() useQueryParams = false;
 
@@ -106,7 +107,25 @@ export class SearchComponent implements OnInit {
     }
 
     private setGenre(genre) {
-        this.genre = genre;
+        if (genre != null) {
+            this.genreLabel = genre.itemName;
+            this.genre = genre.id;
+        }
+        else {
+            this.genreLabel = '';
+            this.genre = '';
+        }
+    }
+
+    public getGenreName() {
+        let value = '';
+        if (this.genreLabel != '') {
+            value = this.genreLabel;
+        }
+        else if (this.genre != null) {
+            value = this.jsUcfirst(this.genre);
+        }
+        return value;
     }
 
     public getYear() {
@@ -121,4 +140,8 @@ export class SearchComponent implements OnInit {
         return this.initialSearch;
     }
 
+    public jsUcfirst(string) 
+    {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 }

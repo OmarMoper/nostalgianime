@@ -59,11 +59,11 @@ export class GenreComponent extends MultiselectDropdown implements OnInit {
     }
 
     public onItemSelect($event) {
-        this.select.emit($event.id)
+        this.select.emit($event);
     }
 
     public onItemDeSelect() {
-        this.select.emit()
+        this.select.emit();
     }
 
     public getSelector() {
