@@ -1,9 +1,3 @@
-<div class="search-resume">
-    <span class="resume" *ngIf="year == null && (genre == null || genre == '')">Use the filters to time travel</span>
-    <span class="resume" *ngIf="year != null && genre == ''">{{year}}'s animes</span>
-    <span class="resume" *ngIf="year == null && (genre != null && genre != '')">{{getGenreName()}} anime's</span>
-    <span class="resume" *ngIf="year != null && genre != ''">{{year}}'s {{getGenreName()}} animes</span>
-<div>
 <form class="form search-form" id="search-form">
 <!--<form class="form search-form" id="search-form">--> 
     <div class="form-control genres">
@@ -15,3 +9,11 @@
         <select-year (yearSelect)="onYearSelect($event)" [value]="year"></select-year>
     </div>
 </form>
+
+
+<div class="search-resume">
+    <span class="resume" *ngIf="year == null && (genre == null || genre == '')">Use the filters to time travel</span>
+    <span class="resume" *ngIf="year != null && genre == ''">{{year}}'s animes</span>
+    <span class="resume" *ngIf="year == null && (genre != null && genre != '')">{{getGenreName()}} anime's</span>
+    <span class="resume" *ngIf="year != null && genre != ''">{{year}}'s {{getGenreName()}} animes</span>
+<div></div>
