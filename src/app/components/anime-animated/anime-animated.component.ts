@@ -13,9 +13,9 @@ export class AnimeAnimatedComponent implements OnInit, OnDestroy {
     animeList;
     animator: AnimateInterface
 
-    constructor(animeAnimated: KitsuAPIAnimeAnimated, animator: AnimateRandom) {
+    constructor(animeAnimated: KitsuAPIAnimeAnimated) {
         this.animeList = animeAnimated.getList();
-        this.animator = animator;
+        this.animator = new AnimateRandom();
     }
 
     public configureAnimator() {

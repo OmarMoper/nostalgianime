@@ -33,8 +33,6 @@ import {KitsuAPIGenre} from './services/API/KitsuAPIGenre';
 import {KitsuAPIAnime} from './services/API/KitsuAPIAnime';
 import {KitsuAPIAnimeAnimated} from './services/API/KitsuAPIAnimeAnimated';
 import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
-import {AnimateLoop} from './services/Animate/AnimateLoop';
-import {AnimateRandom} from './services/Animate/AnimateRandom';
 
 @NgModule({
   declarations: [
@@ -71,9 +69,7 @@ import {AnimateRandom} from './services/Animate/AnimateRandom';
     KitsuAPIGenre,
     AnimeInfoAPI,
     KitsuAPIAnime,
-    KitsuAPIAnimeAnimated,
-    AnimateLoop,
-    AnimateRandom
+    KitsuAPIAnimeAnimated
   ],
   bootstrap: [ AppComponent ]
 })
