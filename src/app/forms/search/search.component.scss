@@ -20,6 +20,18 @@
         display: block;
         margin-top: .3em;
         font-family: 'Roboto';
-        font-size: 22px;
+        font-size: 26px;
+        text-align: center;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 15%;
+            margin-left: 42.5%;
+            border-bottom: 1px solid black;
+        }
     }
 }
