@@ -2,6 +2,21 @@
 @import '../../shared/scss/components';
 
 .main-menu {
+    & > * {
+        display: inline-block;
+    }
+    .brand a {
+        text-decoration: none;
+        color: black;
+    }
+    .brand img {
+        position: relative;
+        top: 7px;
+    }
+    .brand .site-name {
+        font-family: Montserrat;
+        font-size: 22px;
+    }
     margin: 0;
     padding: 0;
     width: 100%;
