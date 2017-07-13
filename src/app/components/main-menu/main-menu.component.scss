@@ -5,44 +5,47 @@
     & > * {
         display: inline-block;
     }
-    .brand a {
-        text-decoration: none;
-        color: black;
-    }
-    .brand img {
-        position: relative;
-        top: 7px;
-    }
-    .brand .site-name {
-        font-family: Montserrat;
-        font-size: 22px;
+    .brand {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        img {
+            position: relative;
+            top: 7px;
+        }
+        .site-name {
+            font-family: Montserrat;
+            font-size: 22px;
+        }
+        .dropdown-menu {
+            display: none;
+        }
     }
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: white;
     text-align: center;
-    ul {
-	margin: 0;
-        list-style-type: none;
-        li {
-            transition: border-bottom .2s ease-in;
-            padding: 0.75em;
-            box-sizing: border-box;
-            vertical-align: center;
-            text-transform: uppercase;
-            text-align: center;
-            display: inline-block;
-            font-weight: bold;
-            border-bottom: .2em transparent solid;
-            a {
-                padding: 1em;
-                color:#292424;
-                text-decoration: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .main-menu {
+        padding-bottom: 1em;
+        .brand {
+            width: 100%;
+            .dropdown-menu {
+                display: inherit; 
+                font-size: 24px;
+                margin-left: 5em;
+                z-index: 50;
             }
-            &:hover {
-                border-bottom: .2em black solid;
-            }
+        }
+        site-links {
+            display: none;
         }
     }
 }

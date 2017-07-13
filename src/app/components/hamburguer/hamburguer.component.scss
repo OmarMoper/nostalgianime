@@ -1,0 +1,22 @@
+@import '../../shared/scss/init';
+@import '../../shared/scss/components';
+
+.hamburguer {
+    display: none;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .hamburguer {
+        position: absolute;
+        top: 0.5em;
+        right: 0;
+        margin-right: 1em;
+        display: inherit; 
+        font-size: 26px;
+        z-index: 50;
+    }
+}

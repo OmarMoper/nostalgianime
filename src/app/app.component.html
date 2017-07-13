@@ -2,6 +2,10 @@
     <main-menu></main-menu>
 </header>
 
+<page-overlay (click)="onOverlayClick()"></page-overlay>
+<hamburguer (close)="onHamburguerClose()" (open)="onHamburguerOpen()"></hamburguer>
+<sidebar-menu (clickLink)="onHamburguerClose()"></sidebar-menu>
+
 <main>
     <router-outlet></router-outlet>
 </main>

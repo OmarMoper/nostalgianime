@@ -1,0 +1,42 @@
+ul {
+    margin: 0;
+    list-style-type: none;
+    li {
+        transition: border-bottom .2s ease-in;
+        padding: 0.75em;
+        box-sizing: border-box;
+        vertical-align: center;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        font-weight: bold;
+        border-bottom: .2em transparent solid;
+        a {
+            padding: 1em;
+            color:#292424;
+            text-decoration: none;
+        }
+        &:hover {
+            border-bottom: .2em black solid;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    * {
+        padding: 0;
+    }
+    nav {
+        margin: 1em 0 0 0;
+        ul li {
+            text-align: left;
+            display: block;
+            a {
+                color: white;
+            }
+        }
+    }
+}

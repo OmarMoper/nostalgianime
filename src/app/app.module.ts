@@ -25,7 +25,11 @@ import {AnimeDetailComponent} from './components/anime-detail/anime-detail.compo
 import {AnimeAnimatedComponent} from './components/anime-animated/anime-animated.component';
 import {NoResultsComponent} from './components/no-results/no-results.component';
 import {JqueryScrollTopComponent} from './components/ngx-jquery-scrolltop/ngx-jquery-scrolltop';
+import { SiteLinksComponent } from './components/site-links/site-links.component';
 import {MainMenuComponent} from './components/main-menu/main-menu.component';
+import {SidebarMenuComponent} from './components/sidebar-menu/sidebar-menu.component';
+import {HamburguerComponent} from './components/hamburguer/hamburguer.component';
+import {PageOverlayComponent} from './components/page-overlay/page-overlay.component';
 import { SearchTextComponent } from './forms/search-text/search-text.component';
 
 // Providers.
@@ -51,7 +55,11 @@ import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
     SearchYearComponent,
     SearchTextComponent,
     MainMenuComponent,
-    AnimeAnimatedComponent
+    AnimeAnimatedComponent,
+    SiteLinksComponent,
+    SidebarMenuComponent,
+    HamburguerComponent,
+    PageOverlayComponent
   ],
   imports: [
     BrowserModule,
