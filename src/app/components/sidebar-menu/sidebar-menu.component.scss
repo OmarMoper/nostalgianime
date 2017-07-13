@@ -3,6 +3,9 @@
 
 .sidebar-menu {
     width: 0px;
+    site-links {
+        display: none;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -26,5 +29,8 @@ and (max-device-width : 480px) {
         -moz-transition: all 0.25s ease;
         -o-transition: all 0.25s ease;
         transition: all 0.25s ease;
+        site-links {
+            display: block;
+        }
     }
 }
