@@ -26,3 +26,13 @@ h2 {
         color: black;
     }
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .main-content {
+        bottom: 29em;
+        width: 94%;
+        left: 2.5%;
+    }
+}
