@@ -27,11 +27,23 @@ h2 {
     }
 }
 
-/* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 480px) {
     .main-content {
         top: 8%;
         width: 94%;
         left: 2.5%;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .main-content {
+        top: 13%;
+        h1.page-title {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 12px;
+        }
     }
 }
