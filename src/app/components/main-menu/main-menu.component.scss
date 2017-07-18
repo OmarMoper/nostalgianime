@@ -34,6 +34,7 @@
     .main-menu {
         padding-bottom: 1em;
         .brand {
+            margin-left: -10%;
             width: 100%;
             .dropdown-menu {
                 display: inherit; 
@@ -44,15 +45,6 @@
         }
         site-links {
             display: none;
-        }
-    }
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-    .main-menu {
-        .brand {
-            margin-left: -10%;
         }
     }
 }
