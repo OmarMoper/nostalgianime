@@ -60,12 +60,34 @@
     }
 }
 
+/* Landscape */
+@media only screen 
+  and (max-width: 1024px) {
+    .anime-animated-list {
+        .anime-animated-image {
+            padding-top: 50%;
+        }
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (max-width: 768px) {
+    .anime-animated-list {
+        .anime-animated-image {
+            padding-top: 80% !important;
+        }
+    }
+
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 480px) {
 
     .anime-animated-list {
         .anime-animated-image {
-            padding-top: 100%;
+            padding-top: 100% !important;
         }
     }
 
