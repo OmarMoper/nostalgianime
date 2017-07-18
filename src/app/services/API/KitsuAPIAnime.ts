@@ -19,7 +19,7 @@ export class KitsuAPIAnime extends KitsuAPI {
   }
 
   public getEndpoint() {
-      return '/kitsu/anime'
+      return '/anime'
   }
     
   public convertEntity(data) {

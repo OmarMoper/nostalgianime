@@ -4,8 +4,6 @@ import { Http } from '@angular/http';
 
 /**
  * Make calls to kitsu api.
- *
- * @TODO: settings file with server endpoint. Example https://medium.com/@hasan.hameed/reading-configuration-files-in-angular-2-9d18b7a6aa4
  */
 export abstract class KitsuAPI extends AbstractAPI {
 

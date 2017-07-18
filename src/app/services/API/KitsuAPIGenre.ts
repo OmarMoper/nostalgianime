@@ -15,7 +15,7 @@ export class KitsuAPIGenre extends KitsuAPI {
   }
 
   public getEndpoint() {
-      return '/kitsu/genres?page[limit]=100&format=json&sort=name'
+      return '/genres?page[limit]=100&format=json&sort=name'
   }
     
   public convertEntity(data) {

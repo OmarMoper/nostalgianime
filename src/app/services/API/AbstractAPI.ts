@@ -1,6 +1,6 @@
 import { Http } from '@angular/http';
 
-const API_URL = 'https://nostalgiame.herokuapp.com/api';
+const API_URL = 'https://kitsu.io/api/edge';
 export abstract class AbstractAPI {
 
     constructor(protected http: Http) {}
