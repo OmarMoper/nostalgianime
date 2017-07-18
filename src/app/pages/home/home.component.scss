@@ -10,7 +10,7 @@ h2 {
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.45);
     border: 1px solid gray;
-    bottom: 27em;
+    top: 8%;
     width: 60%;
     right: 20%;
     h1.page-title {
@@ -26,10 +26,11 @@ h2 {
         color: black;
     }
 }
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 480px) {
     .main-content {
-        bottom: 22em;
+        top: 8%;
         width: 94%;
         left: 2.5%;
     }
