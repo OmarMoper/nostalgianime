@@ -6,13 +6,13 @@ h2 {
 .main-content {
     text-align: center;
     color: white;
-    position: relative;
+    position: absolute;
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.45);
     border: 1px solid gray;
     bottom: 27em;
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    right: 20%;
     h1.page-title {
         display: inline;
         font-weight: bold;
@@ -21,7 +21,7 @@ h2 {
         font-family: Muli, sans-serif;
     }
     anime-teaser {
-    width: 80%;
+        width: 80%;
         width: 25% !important;
         color: black;
     }
@@ -31,7 +31,7 @@ h2 {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
     .main-content {
-        bottom: 29em;
+        bottom: 22em;
         width: 94%;
         left: 2.5%;
     }
