@@ -111,10 +111,16 @@
        a {
             div {
                 .img {
-                    height: inherit !important;
+                    height: 320px;
                     width: 200px;
                 }
             }
         }
     }
+
+    .title.outside {    
+        margin-top: -3em;
+        margin-left: -2em;
+    }
+
 }
