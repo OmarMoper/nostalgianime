@@ -105,3 +105,16 @@
     width: 13em;
     margin-top: 1em;
 }
+
+@media only screen and (max-width : 500px) {
+    .anime.anime--teaser {
+       a {
+            div {
+                .img {
+                    height: 350px;
+                    width: 220px;
+                }
+            }
+        }
+    }
+}
