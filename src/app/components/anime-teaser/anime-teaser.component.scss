@@ -19,16 +19,6 @@
         transition: transform .2s ease;
     }
 
-    &:hover a {
-        transform: scale(0.75,0.75) translate(-8em, -3em);
-    }
-    /*position:relative;*/
-    &:hover .info {
-        /*transform: translateX(0em);*/
-        animation: my-animation .2s linear forwards;
-        display: inline-block;
-    }
-
    a {
         /*transform: translateX(5em);*/
         display:inline-block;
@@ -106,6 +96,22 @@
     margin-top: 1em;
 }
 
+@media only screen and (min-width : 768px) {
+
+    .anime.anime--teaser {
+        &:hover a {
+            transform: scale(0.75,0.75) translate(-8em, -3em);
+        }
+        /*position:relative;*/
+        &:hover .info {
+            /*transform: translateX(0em);*/
+            animation: my-animation .2s linear forwards;
+            display: inline-block;
+        }
+
+    }
+}
+
 @media only screen and (max-width : 500px) {
     .anime.anime--teaser {
        a {
@@ -115,16 +121,6 @@
                     width: 200px;
                 }
             }
-        }
-
-        &:hover a {
-            transform: none;
-        }
-        /*position:relative;*/
-        &:hover .info {
-            /*transform: translateX(0em);*/
-            animation: none;
-            display: none;
         }
 
     }
