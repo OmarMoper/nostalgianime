@@ -10,7 +10,7 @@ h2 {
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.45);
     border: 1px solid gray;
-    top: 8%;
+    top: 5em;
     width: 60%;
     right: 20%;
     h1.page-title {
@@ -39,7 +39,6 @@ h2 {
 @media only screen 
   and (max-width: 1024px) {
     .main-content {
-        top: 15%;
         width: 71.5%;
         right: 14%;
         h1.page-title {
