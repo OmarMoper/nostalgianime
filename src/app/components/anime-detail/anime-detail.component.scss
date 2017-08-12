@@ -221,3 +221,67 @@
         width: 23%;
     }
 }
+
+@media only screen and (min-width : 768px) {
+
+}
+
+@media only screen and (max-width : 720px) {
+
+    .anime.anime--detail {
+
+        ul {
+            text-align: center !important;
+        }
+        .caption {
+            width: 100%;
+        }
+        & > * {
+            display: block;
+        }
+
+        .move-up {
+            position: relative;
+            bottom: -15px;
+            width: 100%;
+        }
+
+        .img.full {
+            .title {
+                font-size: 24px;
+                top: 15em;
+                right: 0;
+            }
+        }
+
+        .info-left {
+            margin-left: 0;
+            img.cover {
+                display: none;
+            }
+        }
+
+        youtube-player {
+            display: none;
+        }
+
+        .info-center {
+            width: 100% !important;
+            position: relative;
+            top: 7em;
+        }
+
+        .info-right {
+            width: 100%;
+            div.share-links {
+                position: absolute;
+                top: 28em;
+            }
+            .info {
+                width: 100%;
+                position: absolute;
+                top: 43em;
+            }
+        }
+    }
+}
