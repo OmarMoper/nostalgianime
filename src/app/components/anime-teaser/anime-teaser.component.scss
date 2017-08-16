@@ -15,11 +15,13 @@
         &:not(.description) {
             z-index: 1;
         }
+        margin-left: 2px;
+        margin-top: 2px;
         vertical-align: top;
         transition: transform .2s ease;
     }
 
-   a {
+   a {    
         /*transform: translateX(5em);*/
         display:inline-block;
         /*transform: translateX(6em);*/
