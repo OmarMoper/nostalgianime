@@ -16,6 +16,7 @@ import {ShareButtonsModule} from 'ngx-sharebuttons';
 import { HomeComponent } from './pages/home/home.component';
 import { ExploreComponent } from './pages/explore/explore.component';
 import { AboutComponent } from './pages/about/about.component';
+import { LittleStoryComponent } from './pages/little-story/little-story.component';
 import { SearchComponent } from './forms/search/search.component';
 import {GenreComponent} from './forms/elements/genre/genre.component';
 import {YearComponent} from './forms/elements/year/year.component';
@@ -45,6 +46,7 @@ import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
     HomeComponent,
     ExploreComponent,
     AboutComponent,
+    LittleStoryComponent,
     SearchComponent,
     AnimeInfoComponent,
     AnimeResultsComponent,
