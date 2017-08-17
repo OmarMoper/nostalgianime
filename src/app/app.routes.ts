@@ -13,4 +13,5 @@ export const rootRouterConfig: Routes = [
   { path: 'explore', component: ExploreComponent },
   { path: 'about', component: AboutComponent},
   { path: 'story', component: LittleStoryComponent},
+  { path: 'anime/:animeId',      component: AnimeDetailComponent },
 ];
