@@ -4,9 +4,13 @@ h1 {
 }
 
 .about {
-    background-color: white;
-    padding: .5em;
-    border: .4em solid #aba4a4;
-    border-radius: 1em;
-    font-family: Georgia, serif;
+   background-color: #fff;
+   padding: 15px;
+   border: 1px solid #aba4a4 ;
+   border-radius: 2px;
+   font-family: Georgia,serif;
+   box-shadow: 1px 1px 6px black;
+    max-width:768px;
+    margin: 3% auto;
+    color: #565050 ;
 }
