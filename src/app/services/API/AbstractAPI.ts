@@ -1,9 +1,9 @@
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 const API_URL = 'https://kitsu.io/api/edge';
 export abstract class AbstractAPI {
 
-    constructor(protected http: Http) {}
+    constructor(protected http: HttpClient) {}
 
     abstract getEndpoint(): string;
 

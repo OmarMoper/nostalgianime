@@ -4,7 +4,7 @@ import { rootRouterConfig } from './app.routes';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { SearchYearComponent } from './forms/search-year/search-year.component';
@@ -20,7 +20,6 @@ import { LittleStoryComponent } from './pages/little-story/little-story.componen
 import { SearchComponent } from './forms/search/search.component';
 import {GenreComponent} from './forms/elements/genre/genre.component';
 import {YearComponent} from './forms/elements/year/year.component';
-import {AnimeInfoComponent} from './components/anime-info/anime-info.component';
 import {AnimeResultsComponent} from './components/anime-results/anime-results.component';
 import {AnimeTeaserComponent} from './components/anime-teaser/anime-teaser.component';
 import {AnimeDetailComponent} from './components/anime-detail/anime-detail.component';
@@ -38,7 +37,6 @@ import { SearchTextComponent } from './forms/search-text/search-text.component';
 import {KitsuAPIGenre} from './services/API/KitsuAPIGenre';
 import {KitsuAPIAnime} from './services/API/KitsuAPIAnime';
 import {KitsuAPIAnimeAnimated} from './services/API/KitsuAPIAnimeAnimated';
-import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
 
 @NgModule({
   declarations: [
@@ -48,7 +46,6 @@ import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
     AboutComponent,
     LittleStoryComponent,
     SearchComponent,
-    AnimeInfoComponent,
     AnimeResultsComponent,
     AnimeTeaserComponent,
     AnimeDetailComponent,
@@ -69,7 +66,7 @@ import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true }),
     AngularMultiSelectModule,
     InfiniteScrollModule,
@@ -79,7 +76,6 @@ import {AnimeInfoAPI} from './services/API/AnimeInfoAPI';
   ],
   providers: [
     KitsuAPIGenre,
-    AnimeInfoAPI,
     KitsuAPIAnime,
     KitsuAPIAnimeAnimated
   ],

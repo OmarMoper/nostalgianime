@@ -1,22 +1,22 @@
 import 'rxjs/add/operator/map';
 import { AbstractAPI } from './AbstractAPI'
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 /**
  * Make calls to kitsu api.
  */
 export abstract class KitsuAPI extends AbstractAPI {
 
-  constructor(protected http: Http) {
+  constructor(protected http: HttpClient) {
       super(http)
   }
 
     public getData(response, callback) {
-        var data = response.json();
-        var data_data = data.data;
+        console.log(response);
+        var data_data = response.data;
         // @WORKAROUND: add 'included' to data!
         // @TODO: refactor!
-        data_data.included = data.included;
+        data_data.included = response.included;
         return typeof(data_data[0]) != 'undefined' ? this.getEntities(data_data, callback) : callback(data_data);
     }
 

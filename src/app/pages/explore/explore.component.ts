@@ -9,7 +9,7 @@ import {AnimeResultsComponent} from '../../components/anime-results/anime-result
 })
 
 export class ExploreComponent {
-    @ViewChild(AnimeInfoComponent) animeInfoComponent: AnimeInfoComponent
+
     @ViewChild(AnimeResultsComponent) animeResultsComponent: AnimeResultsComponent
     onSearch(data) {
         this.animeResultsComponent.search = data

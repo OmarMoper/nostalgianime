@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import {Anime} from '../../models/Anime';
 import { KitsuAPI } from './KitsuAPI'
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 /**
@@ -10,7 +10,7 @@ import { Http } from '@angular/http';
  */
 export class KitsuAPIAnime extends KitsuAPI {
 
-  constructor(protected http: Http) {
+  constructor(protected http: HttpClient) {
       super(http)
   }
 
@@ -21,7 +21,7 @@ export class KitsuAPIAnime extends KitsuAPI {
   public getEndpoint() {
       return '/anime'
   }
-    
+
   public convertEntity(data) {
     return new Anime(data)
   }
@@ -29,7 +29,7 @@ export class KitsuAPIAnime extends KitsuAPI {
   public searchAnime(data) {
     return this.makeRequestList(data)
   }
-  
+
   public buildUrl(data) {
     let querystring = [];
     let url = this.getEndpointUrl()
