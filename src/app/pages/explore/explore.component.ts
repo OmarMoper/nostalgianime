@@ -1,5 +1,4 @@
 import {Component, ViewChild } from '@angular/core';
-import {AnimeInfoComponent} from '../../components/anime-info/anime-info.component'
 import {AnimeResultsComponent} from '../../components/anime-results/anime-results.component'
 
 @Component({
