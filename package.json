@@ -25,12 +25,13 @@
     "angular2-multiselect-dropdown": "^1.1.4",
     "animate.css": "^3.5.2",
     "core-js": "^2.4.1",
+    "hoek": "^4.2.1",
     "jquery": "^3.2.1",
     "ngx-infinite-scroll": "^0.5.1",
     "ngx-sharebuttons": "^3.0.0",
     "rxjs": "^6.2.1",
-    "zone.js": "^0.8.4",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "rxjs-compat": "^6.0.0-rc.0",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "@angular/cli": "^6.0.8",
